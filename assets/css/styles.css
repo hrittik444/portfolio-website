@@ -216,17 +216,17 @@ header nav li {
 }
 
 .skillset .subheading {
-	font: normal 20px 'Raleway';
+	font: normal 25px 'Raleway';
 }
 
 .skillset .grid li {
 	padding: 5px;
-	flex-basis: 15%;
+	flex-basis: 10%;
 	text-align: center;
 }
 
-.skillset .grid li i {
-	color: #8c9eff;
+.skillset .grid li img {
+	max-width: 80%;
 }
 
 .skillset .grid li h4 {
@@ -258,6 +258,34 @@ header nav li {
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
+	background-color: #a3a3a3;
+	display: flex;
+	text-align: center;
+}
+
+.projects .grid li a { 
+	display: flex;
+	text-align: center;
+	margin: auto auto auto auto;
+}
+
+.projects .grid li:hover {
+	opacity: 0.8;
+}
+
+.projects .grid li:hover i {
+	opacity: 1;
+}
+
+.projects .grid * {
+	transition: all 0.2s ease-in-out;
+}
+
+.projects .grid li i {
+	font-size: 45px;
+	color: #061847;
+	margin: auto auto auto auto;
+	opacity: 0;
 }
 
 .projects .grid li.small {
@@ -364,7 +392,6 @@ footer ul li {
 }
 
 footer p {
-	text-transform: uppercase;
 	font-size: 14px;
 	opacity: 0.6;
 	align-self: center;
