@@ -8,6 +8,7 @@
 }
 
 html {
+	display: flex;
 	font: normal 16px 'Raleway';
 	color: #555;
 	scroll-behavior: smooth;
@@ -123,10 +124,16 @@ header nav li {
 	header {
 		padding: 20px 50px;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	header h2 {
 		margin-bottom: 15px;
+		opacity: 0;
+	}
+
+	header nav li {
+		opacity: 0;
 	}
 }
 
@@ -221,7 +228,7 @@ header nav li {
 
 .skillset .grid li {
 	padding: 5px;
-	flex-basis: 10%;
+	/*flex-basis: 10%;*/
 	text-align: center;
 }
 
@@ -338,6 +345,10 @@ header nav li {
 }
 
 /*Contact Section*/
+
+.contact {
+	display: flex;
+}
 
 .contact h3.title {
 	font: bold 50px 'Raleway';
